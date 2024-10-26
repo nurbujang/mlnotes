@@ -7,3 +7,10 @@ predictions = w0 + np.dot(w1,X).reshape(1,-1) why reshape predictions?
 regression is always y,pred?
 check cars, diabetes
 
+2
+pg 6 - pred= predicted y?
+A=Z Cross validation example
+try and stop at how many variables?
+just pick randomly?
+
+
