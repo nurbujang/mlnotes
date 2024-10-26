@@ -1,0 +1,9 @@
+1. 
+y.shape (6,) means?
+y.ndim 1 means?
+but x needs to be 2d array, why? always reshape x?
+whrn to know when to reshape? and when not to reshape?
+predictions = w0 + np.dot(w1,X).reshape(1,-1) why reshape predictions?
+regression is always y,pred?
+check cars, diabetes
+
