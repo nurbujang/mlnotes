@@ -1,14 +1,14 @@
 1. 
 y.shape (6,) means?
 y.ndim 1 means?
-but x needs to be 2d array, why? always reshape x?
-whrn to know when to reshape? and when not to reshape?
+but x needs to be 2d array, why? always reshape x? x>1
+whrn to know when to reshape x? and when not to reshape y?
 predictions = w0 + np.dot(w1,X).reshape(1,-1) why reshape predictions?
 regression is always y,pred?
 check cars, diabetes
 
 2
-pg 6 - pred= predicted y?
+pg 6 - pred= predicted y?y
 A=Z Cross validation example
 try and stop at how many variables?
 just pick randomly?
@@ -35,4 +35,5 @@ Join new predictions and probabilities into original dataset
 cross-validation to find  best kfold value?
 when to do feature scaling? - pick and choose?
 make_pipeline, functiontransformer, minmaxscaler
+
 
