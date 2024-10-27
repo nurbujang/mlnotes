@@ -13,4 +13,26 @@ A=Z Cross validation example
 try and stop at how many variables?
 just pick randomly?
 
+3
+get ypredproba everytime after predictions?
+
+notebook 3 survives/not?:
+    split test train
+    algo model
+    fit with train
+    get ytrainpredict, ytrainproba
+    get xtrain, y train score
+
+notebook 3 make predictions:
+    get ytestpredict, ytestproba
+    xtest, ytest score
+
+Join new predictions and probabilities into original dataset
+    ypredicted, ypredproba
+
+
+4
+cross-validation to find  best kfold value?
+when to do feature scaling? - pick and choose?
+make_pipeline, functiontransformer, minmaxscaler
 
