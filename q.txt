@@ -12,6 +12,7 @@ pg 6 - pred= predicted y?y
 A=Z Cross validation example
 try and stop at how many variables?
 just pick randomly?
+where to fit polynomial in cross validation?
 
 3
 get ypredproba everytime after predictions?
