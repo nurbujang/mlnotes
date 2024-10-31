@@ -11,8 +11,9 @@ check cars, diabetes
 pg 6 - pred= predicted y?y
 A=Z Cross validation example
 try and stop at how many variables?
-just pick randomly?
+just pick variables randomly?
 where to fit polynomial in cross validation?
+diabetes: index not in column?
 
 3
 get ypredproba everytime after predictions?
