@@ -39,3 +39,37 @@ when to do feature scaling? - pick and choose?
 make_pipeline, functiontransformer, minmaxscaler
 
 
+feature processing:
+
+model = make_pipeline(StandardScaler(), KNeighborsClassifier(n_neighbors=9))
+model.fit(X_train, y_train)
+print(model.score(X_test, y_test))
+
+then kfold crossvalidation, to find the best k, with pipeline
+for k in ks:
+    fold = 0
+    if k == 0:
+        continue ##we can't have 0 neighbors so let's skip this one
+    print(k)
+        
+    for train_index, val_index in kf.split(X_train):
+        X_c, X_val = X_train[train_index], X_train[val_index]
+        y_c, y_val = y_train[train_index], y_train[val_index]
+        est = make_pipeline(
+            StandardScaler(),
+            KNeighborsClassifier(n_neighbors = k)
+        )
+        est.fit(X_c, y_c) # fit on the remaining train
+        train_scores[k, fold] = est.score(X_c, y_c)
+        valid_scores[k, fold] = est.score(X_val, y_val)
+        fold += 1 
+
+then final evaluation, with pipeline
+model = make_pipeline(
+    StandardScaler(),
+    KNeighborsClassifier(n_neighbors=3)
+)
+model.fit(X_train, y_train) # X train is the entirety of the training set
+print(model.score(X_test, y_test))
+
+DO PIPELINE FOR EVERY STEP?
