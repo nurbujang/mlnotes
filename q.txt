@@ -73,3 +73,5 @@ model.fit(X_train, y_train) # X train is the entirety of the training set
 print(model.score(X_test, y_test))
 
 DO PIPELINE FOR EVERY STEP?
+
+6. how to pick the best regularisation? smallest sum of coefficcient? smallest lambda? smallest mse?
